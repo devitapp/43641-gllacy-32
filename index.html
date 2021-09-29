@@ -1,12 +1,239 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес.">
+  <meta name="keywords"
+    content="глэйси, мороженое, магазин, купить мороженое, онлайн-магазин мороженого, вафельный рожок">
+  <link rel="icon" href="img/favicon-32.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main-style.css">
+  <title>Глэйси - магазин по продаже мороженого</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <div class="container">
+      <a class="header-logo-link">
+        <img class="header-logo-img" src="#" alt="Логотип магазина Глэйси">
+      </a>
+      <nav class="site-navigation">
+        <ul class="site-navigation-list">
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="catalog.html">Каталог</a>
+            <ol class="site-navigation-dropdown-list">
+              <li class="site-navigation-dropdown-item">
+                <a href="#" class="site-navigation-dropdown-link">Новинки</a>
+              </li>
+              <li class="site-navigation-dropdown-item">
+                <a href="#" class="site-navigation-dropdown-link">Сливочное</a>
+              </li>
+              <li class="site-navigation-dropdown-item">
+                <a href="#" class="site-navigation-dropdown-link">Щербеты</a>
+              </li>
+              <li class="site-navigation-dropdown-item">
+                <a href="#" class="site-navigation-dropdown-link">Фруктовый лед</a>
+              </li>
+              <li class="site-navigation-dropdown-item">
+                <a href="#" class="site-navigation-dropdown-link">Мелорин</a>
+              </li>
+            </ol>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#">Доставка и оплата</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#">О компании</a>
+          </li>
+        </ul>
+        <ul class="site-navigation-list navigation-user">
+          <li class="site-navigation-item">
+            <a class="site-navigation-link-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+          </li>
+          <li class="site-navigation-item">
+            <form class="site-navigation-search-form" action="https://echo.htmlacademy.ru/" method="GET">
+              <input class="site-navigation-search-button" type="search" name="search" placeholder="Поиск по сайту">
+            </form>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link-login" href="#">Вход</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link-basket" href="#">Пусто</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <div class="container">
+      <h1 class="visually-hidden">Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства.</h1>
+      <section class="main-slider">
+        <!-- Слайдер -->
+        <ul class="socialmedia-list">
+          <li class="socialmedia-item">
+            <a class="socialmedia-link" href="http://vk.com/htmlacademy"></a>
+          </li>
+          <li class="socialmedia-item">
+            <a class="socialmedia-link" href="http://facebook.com/htmlacademy"></a>
+          </li>
+          <li class="socialmedia-item">
+            <a class="socialmedia-link" href="http://instagram.com/htmlacademy"></a>
+          </li>
+        </ul>
+      </section>
+      <section class="main-shopping-gift">
+        <h2 class="shopping-gift-title">Заказывайте мороженое и получайте подарки!</h2>
+        <ul class="shopping-gift-list">
+          <li class="shopping-gift-item">
+            <h3 class="shopping-gift-title">Малинка даром!</h3>
+            <img class="shopping-gift-img" src="#" alt="Вкусная малина в вафельном рожке" width="100" height="100">
+            <p class="shopping-gift-description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+            <a class="button-all button-link" href="#">Хочу подарок</a>
+          </li>
+          <li class="shopping-gift-item">
+            <h3 class="shopping-gift-title">Маршмеллоу даром!</h3>
+            <img class="shopping-gift-img" src="#" alt="Мягкий маршмеллоу в вафельном рожке" width="100" height="100">
+            <p class="shopping-gift-description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
+            <a class="button-all button-link" href="#">Хочу подарок</a>
+          </li>
+        </ul>
+      </section>
+      <section class="main-popular-goods">
+        <h3 class="popular-goods-title">Попробуйте самые популярные вкусы нашего мороженого</h3>
+        <ol class="popular-goods-list">
+          <li class="popular-goods-item">
+            <h4 class="popular-goods-title">Малинка</h4>
+            <img class="popular-goods-img" src="#" alt="Розовый шарик мороженого">
+            <p class="popular-goods-description">Сливочное мороженое с малиновым джемом</p>
+            <b class="popular-goods-price">310 ₽/кг</b>
+            <button class="button-order-normal" type="button"></button>
+          </li>
+          <li class="popular-goods-item">
+            <h4 class="popular-goods-title">Фисташка</h4>
+            <img class="popular-goods-img" src="#" alt="Салатовый шарик мороженого">
+            <p class="popular-goods-description">Фисташковый пломбир с кусочками шоколада</p>
+            <b class="popular-goods-price">340 ₽/кг</b>
+            <button class="button-order-normal" type="button"></button>
+          </li>
+          <li class="popular-goods-item">
+            <h4 class="popular-goods-title">Черника</h4>
+            <img class="popular-goods-img" src="#" alt="Белый шарик мороженного с фиолетовыми вкраплениями джема">
+            <p class="popular-goods-description">Крем-брюле с черничным джемом</p>
+            <b class="popular-goods-price">330 ₽/кг</b>
+            <button class="button-order-normal" type="button"></button>
+          </li>
+          <li class="popular-goods-item">
+            <h4 class="popular-goods-title">Бабл-гам</h4>
+            <img class="popular-goods-img" src="#" alt="Бирюзовый шарик мороженого с посыпкой">
+            <p class="popular-goods-description">Ванильный пломбир со сладкой посыпкой</p>
+            <b class="popular-goods-price">320 ₽/кг</b>
+            <button class="button-order-normal" type="button"></button>
+          </li>
+        </ol>
+      </section>
+      <section class="main-infoblock-shop">
+        <h2 class="infoblock-shop-title">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</h2>
+        <ol class="infoblock-shop-list">
+          <li class="infoblock-shop-item">Всё наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+          <li class="infoblock-shop-item">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</li>
+          <li class="infoblock-shop-item">Закупка ингредиентов производится толькоу проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</li>
+          <li class="infoblock-shop-item">Доставка нашего мороженого осуществляется в специальном термопаке, который не дает мороженому растаять и позволяет сохранить превосходный вкус.</li>
+        </ol>
+      </section>
+      <section class="main-blog-publication">
+        <article class="blog-publication-post">
+          <span class="blog-publication-subtitle">Новое в нашем блоге</span>
+          <a class="blog-publication-link" href="#">
+            <h3 class="blog-publication-title">10 способов сервировки фруктовых щербетов к столу</h3>
+          </a>
+        </article>
+        <form class="blog-publication-subscribe" action="https://echo.htmlacademy.ru/">
+          <p class="blog-publication-description">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+          <input type="email" name="newsletter-email" id="newsletter-email" placeholder="email@example.com" required>
+          <button class="button-all button-normal-accent" type="submit">Отправить</button>
+        </form>
+      </section>
+      <section class="main-home-delivery">
+        <h2 class="home-delivery-title">Доставка любимого мороженого на дом</h2>
+        <p class="home-delivery-description">Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом и курьер привезет вам ваш заказ в течение часа!</p>
+        <form class="home-delivery-form" action="https://echo.htmlacademy.ru/" method="POST">
+          <p class="home-delivery-form-description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+          <p>
+            <label for="delivery-date">Дата</label>
+            <input type="date" name="delivery-date" id="delivery-date" required>
+            <label for="delivery-phone-consumer">Телефон</label>
+            <input type="tel" name="delivery-phone-consumer" id="delivery-phone-consumer" placeholder="+7 800 999-00-00" required>
+          </p>
+          <p>
+            <label for="delivery-address-consumer">Адрес</label>
+            <input type="text" name="delivery-address-consumer" id="delivery-address-consumer" placeholder="ул. Большая Конюшенная, 19/8" required>
+          </p>
+          <button class="button-all button-normal-accent" type="submit">Отправить</button>
+        </form>
+      </section>
+      <section class="main-contact-shop">
+        <div class="contact-shop-block">
+          <p class="contact-shop-block-description">Адрес главного офиса и офлайн-магазина:</p>
+          <address class="contact-shop-block-location">наб. Реки Карповки, 5 лит П, Санкт-Петербург</address>
+          <p class="contact-shop-block-description">Для заказов по телефону:</p>
+          <a class="contact-shop-block-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <span class="contact-shop-block-officetime">(с 10 до 20 ежедневно)</span>
+          <button class="button-all button-normal-accent" type="button">Форма обратной связи</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <section class="footer-socialmedia">
+        <ul class="footer-socialmedia-list">
+          <li class="footer-socialmedia-item">
+            <a href="http://vk.com/htmlacademy" class="footer-socialmedia-link"></a>
+          </li>
+          <li class="footer-socialmedia-item">
+            <a href="http://facebook.com/htmlacademy" class="footer-socialmedia-link"></a>
+          </li>
+          <li class="footer-socialmedia-item">
+            <a href="http://instagram.com/htmlacademy" class="footer-socialmedia-link"></a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer-paperwork">
+        <ol class="footer-paperwork-list">
+          <li class="fooret-paperwork-item">
+            <a href="" class="footer-paperword-link">
+              <b>Для поставщиков</b>
+            </a>
+          </li>
+          <li class="fooret-paperwork-item">
+            <a href="" class="footer-paperword-link">
+              О производстве
+            </a>
+          </li>
+          <li class="fooret-paperwork-item">
+            <a href="" class="footer-paperword-link">
+              Наши документы
+            </a>
+          </li>
+          <li class="fooret-paperwork-item">
+            <a href="" class="footer-paperword-link">
+              Экологические стандарты
+            </a>
+          </li>
+        </ol>
+      </section>
+      <section class="footer-copyright">
+        <img class="footer-copyright-logo" src="#" alt="Логотип разработчика - HTML Academy" width="100" height="100">
+        <p class="footer-copyright-text">Сделано в <a href="http://htmlacademy.ru">.html academy</a> © 2021</p>
+      </section>
+    </div>
+  </footer>
+</body>
+
 </html>
