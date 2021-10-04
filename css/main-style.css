@@ -1,4 +1,19 @@
 body{
-  width: 100%;
   background-color: #FEAFC3;
 }
+
+/* Временное обозначение слайдера */
+.main-slider {
+  width: 1170px;
+  height: 554px;
+  outline: 2px dashed #FFCBD8;
+  background-color: #FFCBD8;
+}
+
+.main-slider::before {
+  content: "Slider";
+  padding-left: 10px;
+  font-size: 21px;
+  color: #2c3e50;
+}
+/* END */

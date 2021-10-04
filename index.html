@@ -25,9 +25,8 @@
         <ul class="site-navigation-list">
           <li class="site-navigation-item">
             <a class="site-navigation-link" href="catalog.html">Каталог</a>
-            <ol class="site-navigation-dropdown-list">
-              <li class="site-navigation-dropdown-item">
-                <a href="#" class="site-navigation-dropdown-link">Новинки</a>
+            <ul class="site-navigation-dropdown-list">
+              <li class="site-navigation-dropdown-item">Новинки
               </li>
               <li class="site-navigation-dropdown-item">
                 <a href="#" class="site-navigation-dropdown-link">Сливочное</a>
@@ -41,7 +40,7 @@
               <li class="site-navigation-dropdown-item">
                 <a href="#" class="site-navigation-dropdown-link">Мелорин</a>
               </li>
-            </ol>
+            </ul>
           <li class="site-navigation-item">
             <a class="site-navigation-link" href="#">Доставка и оплата</a>
           </li>
@@ -54,8 +53,10 @@
             <a class="site-navigation-link-phone" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
           <li class="site-navigation-item">
+            <span class="visually-hidden">Поиск</span>
             <form class="site-navigation-search-form" action="https://echo.htmlacademy.ru/" method="GET">
-              <input class="site-navigation-search-button" type="search" name="search" placeholder="Поиск по сайту">
+              <label class="visually-hidden" for="search">Поиск по сайту</label>
+              <input class="site-navigation-search-button" type="search" name="search" id="search" placeholder="Поиск по сайту">
             </form>
           </li>
           <li class="site-navigation-item">
@@ -72,7 +73,7 @@
   <main class="page-main">
     <div class="container">
       <h1 class="visually-hidden">Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства.</h1>
-      <section class="main-slider">
+      <section class="slider">
         <!-- Слайдер -->
         <ul class="socialmedia-list">
           <li class="socialmedia-item">
@@ -86,26 +87,26 @@
           </li>
         </ul>
       </section>
-      <section class="main-shopping-gift">
+      <section class="shopping-gift">
         <h2 class="shopping-gift-title">Заказывайте мороженое и получайте подарки!</h2>
         <ul class="shopping-gift-list">
           <li class="shopping-gift-item">
             <h3 class="shopping-gift-title">Малинка даром!</h3>
             <img class="shopping-gift-img" src="#" alt="Вкусная малина в вафельном рожке" width="100" height="100">
             <p class="shopping-gift-description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <a class="button-all button-link" href="#">Хочу подарок</a>
+            <a class="button-link" href="#">Хочу подарок</a>
           </li>
           <li class="shopping-gift-item">
             <h3 class="shopping-gift-title">Маршмеллоу даром!</h3>
             <img class="shopping-gift-img" src="#" alt="Мягкий маршмеллоу в вафельном рожке" width="100" height="100">
             <p class="shopping-gift-description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
-            <a class="button-all button-link" href="#">Хочу подарок</a>
+            <a class="button-link" href="#">Хочу подарок</a>
           </li>
         </ul>
       </section>
-      <section class="main-popular-goods">
+      <section class="popular-goods">
         <h3 class="popular-goods-title">Попробуйте самые популярные вкусы нашего мороженого</h3>
-        <ol class="popular-goods-list">
+        <ul class="popular-goods-list">
           <li class="popular-goods-item">
             <h4 class="popular-goods-title">Малинка</h4>
             <img class="popular-goods-img" src="#" alt="Розовый шарик мороженого">
@@ -134,7 +135,7 @@
             <b class="popular-goods-price">320 ₽/кг</b>
             <button class="button-order-normal" type="button"></button>
           </li>
-        </ol>
+        </ul>
       </section>
       <section class="main-infoblock-shop">
         <h2 class="infoblock-shop-title">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</h2>
