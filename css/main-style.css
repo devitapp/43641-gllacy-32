@@ -1,19 +1,249 @@
-body{
+@font-face {
+  font-family: Inter, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+.page-body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2D3440;
   background-color: #FEAFC3;
 }
 
+/* .visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
 /* Временное обозначение слайдера */
-.main-slider {
+.slider {
   width: 1170px;
   height: 554px;
+  margin-bottom: 80px;
   outline: 2px dashed #FFCBD8;
   background-color: #FFCBD8;
 }
 
-.main-slider::before {
+.slider::before {
   content: "Slider";
   padding-left: 10px;
   font-size: 21px;
   color: #2c3e50;
 }
 /* END */
+
+
+.page-header {
+  margin-top: 24px;
+}
+
+.site-navigation-list,
+.site-navigation-dropdown-list {
+  list-style-type: none;
+}
+
+
+.site-navigation-link,
+.site-navigation-dropdown-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #2c3e50;
+}
+
+.site-navigation-link-phone {
+  font-weight: 700;
+  text-decoration: none;
+  color: #2c3e50;
+}
+
+.navigation-user {
+  font-size: 14px;
+}
+
+.site-navigation-link-login,
+.site-navigation-link-basket {
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.shopping-gift-subject,
+.catalog-goods-subject,
+.infoblock-shop-subject,
+.home-delivery-subject {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.shopping-gift-title {
+font-weight: 700;
+font-size: 24px;
+line-height: 30px;
+}
+
+.shopping-gift-description {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.button-link {
+  font-weight: 700;
+}
+
+.infoblock-shop-item {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.blog-publication-subtitle,
+.blog-publication-description {
+  color: #565C66;
+}
+
+.blog-publication-title {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.blog-publication-link {
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.home-delivery-description,
+.home-delivery-form-description {
+  color: #565C66;
+}
+
+.contact-shop-block-description {
+  color: #565C66;
+}
+
+.contact-shop-block-location,
+.contact-shop-block-phone {
+  font-weight: 700;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.footer-paperword-link {
+  font-size: 14px;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.footer-copyright-text,
+.footer-copyright-link {
+  font-size: 12px;
+  line-height: 16px;
+  color: #2D3440;
+}
+
+
+/* Page Catalog */
+
+.breadcrumbs-link {
+  font-weight: 700;
+  color: #2D3440;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.breadcrumbs-link-current {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.filter-product-form {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.filter-product-button {
+  font-weight: 700;
+}
+
+.catalog-goods-list {
+  list-style-type: none;
+}
+
+.catalog-goods-title {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.catalog-goods-img {
+  border-radius: 50%;
+  filter: drop-shadow(0px 4px 12px rgba(45, 52, 64, 0.1));
+}
+
+.catalog-goods-description {
+  text-align: center;
+}
+
+.button-order-normal {
+  width: 32px;
+  height: 32px;
+  background-color: #FF2F64;
+  border-radius: 50%;
+  border: none;
+}
+
+.button-all {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.pagination-list {
+  list-style-type: none;
+}
+
+.pagination-link {
+  text-decoration: none;
+  color: #2D3440;
+}
+
