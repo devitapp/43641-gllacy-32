@@ -103,6 +103,10 @@
   list-style-type: none;
 }
 
+.shopping-gift-item {
+  background-color: #FF7799;
+}
+
 .shopping-gift-title {
 font-weight: 700;
 font-size: 24px;
@@ -118,7 +122,10 @@ line-height: 30px;
   font-weight: 700;
   text-decoration: none;
   color: #2D3440;
+}
 
+.infoblock-shop {
+  background-color: #FCFCFC;
 }
 
 .infoblock-shop-list {
@@ -128,6 +135,13 @@ line-height: 30px;
 .infoblock-shop-item {
   font-size: 16px;
   line-height: 22px;
+}
+
+.blog-publication-post {
+  background-color: #FCFCFC;
+  background-image: url(../img/fruit-sherbet.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 .blog-publication-subtitle,
@@ -145,9 +159,36 @@ line-height: 30px;
   color: #2D3440;
 }
 
+.blog-publication-subscribe {
+  background-color: #FCFCFC;
+}
+
+.home-delivery {
+  background-color: #FCFCFC;
+  background-image: url(../img/delivery-ice-cream.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.home-delivery-form {
+  background-color: #FCFCFC;
+  box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
+}
+
 .home-delivery-description,
 .home-delivery-form-description {
   color: #565C66;
+}
+
+.contact-shop {
+  background-color: #FCFCFC;
+  background-image: url(../img/ice-cream-cone.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.contact-shop-block {
+  background-color: #FCFCFC;
 }
 
 .contact-shop-block-description {
@@ -208,6 +249,10 @@ line-height: 30px;
 
 .catalog-goods-list {
   list-style-type: none;
+}
+
+.catalog-goods-item {
+  background-color: #FCFCFC;
 }
 
 .catalog-goods-title {
