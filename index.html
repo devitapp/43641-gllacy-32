@@ -10,81 +10,91 @@
     content="глэйси, мороженое, магазин, купить мороженое, онлайн-магазин мороженого, вафельный рожок">
   <link rel="icon" href="img/favicon-32.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main-style.css">
   <title>Глэйси - магазин по продаже мороженого</title>
 </head>
 
 <body class="page-body">
-  <header class="page-header">
-    <div class="container">
-      <a class="header-logo-link">
-        <img class="header-logo-img" src="img/logo-glassy.svg" width="137" height="56" alt="Логотип магазина Глэйси">
-      </a>
-      <nav class="site-navigation">
-        <ul class="site-navigation-list">
-          <li class="site-navigation-item">
-            <a class="site-navigation-link" href="catalog.html">Каталог</a>
-            <ul class="site-navigation-dropdown-list">
-              <li class="site-navigation-dropdown-item">Новинки
-              </li>
-              <li class="site-navigation-dropdown-item">
-                <a class="site-navigation-dropdown-link" href="#" >Сливочное</a>
-              </li>
-              <li class="site-navigation-dropdown-item">
-                <a class="site-navigation-dropdown-link" href="#">Щербеты</a>
-              </li>
-              <li class="site-navigation-dropdown-item">
-                <a class="site-navigation-dropdown-link" href="#">Фруктовый лед</a>
-              </li>
-              <li class="site-navigation-dropdown-item">
-                <a class="site-navigation-dropdown-link" href="#">Мелорин</a>
-              </li>
-            </ul>
-          </li>
-          <li class="site-navigation-item">
-            <a class="site-navigation-link" href="#">Доставка и оплата</a>
-          </li>
-          <li class="site-navigation-item">
-            <a class="site-navigation-link" href="#">О компании</a>
-          </li>
-        </ul>
-        <div>
-          <a class="site-navigation-link-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-          <ul class="site-navigation-list navigation-user">
-            <li class="site-navigation-item">
-              <span class="visually-hidden">Поиск</span>
-              <form class="site-navigation-search-form" action="https://echo.htmlacademy.ru/" method="GET">
-                <label class="visually-hidden" for="search">Поиск по сайту</label>
-                <input class="site-navigation-search-button" type="search" name="search" id="search" placeholder="Поиск по сайту">
-              </form>
+  <header class="page-header container">
+    <a class="header-logo-link">
+      <img class="header-logo-img" src="img/logo-glassy.svg" width="137" height="56" alt="Логотип магазина Глэйси">
+    </a>
+    <nav class="site-navigation">
+      <ul class="site-navigation-list">
+        <li class="site-navigation-item">
+          <a class="site-navigation-link" href="catalog.html">Каталог</a>
+          <ul class="site-navigation-dropdown-list">
+            <li class="site-navigation-dropdown-item">Новинки
             </li>
-            <li class="site-navigation-item">
-              <a class="site-navigation-link-login" href="#">Вход</a>
+            <li class="site-navigation-dropdown-item">
+              <a class="site-navigation-dropdown-link" href="catalog.html" >Сливочное</a>
             </li>
-            <li class="site-navigation-item">
-              <a class="site-navigation-link-basket" href="#">Пусто</a>
+            <li class="site-navigation-dropdown-item">
+              <a class="site-navigation-dropdown-link" href="#">Щербеты</a>
+            </li>
+            <li class="site-navigation-dropdown-item">
+              <a class="site-navigation-dropdown-link" href="#">Фруктовый лед</a>
+            </li>
+            <li class="site-navigation-dropdown-item">
+              <a class="site-navigation-dropdown-link" href="#">Мелорин</a>
             </li>
           </ul>
-        </div>
-      </nav>
-    </div>
+        </li>
+        <li class="site-navigation-item">
+          <a class="site-navigation-link" href="#">Доставка и оплата</a>
+        </li>
+        <li class="site-navigation-item">
+          <a class="site-navigation-link" href="#">О компании</a>
+        </li>
+      </ul>
+      <div class="wrapper-navigation-user">
+        <a class="site-navigation-link-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+        <ul class="site-navigation-list navigation-user">
+          <li class="site-navigation-item">
+            <span class="visually-hidden">Поиск</span>
+            <button class="site-navigation-search-button" type="button"></button>
+            <form class="site-navigation-search-form" action="https://echo.htmlacademy.ru/" method="GET">
+              <label class="visually-hidden" for="search">Поиск по сайту</label>
+              <input class="site-navigation-search-field" type="search" name="search" id="search" placeholder="Поиск по сайту">
+            </form>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link-login" href="#">Вход</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link-basket" href="#">Пусто</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
-  <main class="page-main">
+  <main class="page-main main-container">
     <div class="container">
       <h1 class="visually-hidden">Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства.</h1>
       <section class="slider">
         <!-- Слайдер -->
         <ul class="socialmedia-list">
           <li class="socialmedia-item">
-            <a class="socialmedia-link" href="http://vk.com/htmlacademy"></a>
+            <span class="visually-hidden">Вконтакте</span>
+            <a class="socialmedia-link" href="http://vk.com/htmlacademy">
+              <svg class="socialmedia-icon" width="16" height="16" viewbox="0 0 16 16" fill="#FCFCFC" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.392 9.983h-.478s-1.055.056-1.984-.792c-1.013-.925-1.908-2.76-1.908-2.76s-.052-.12.004-.178c.063-.066.235-.07.235-.07l1.143-.006s.108.016.185.065c.063.041.099.118.099.118s.185.41.43.78c.477.723.7.881.861.803.237-.112.166-1.022.166-1.022s.004-.33-.12-.477c-.095-.114-.275-.147-.354-.156-.065-.008.041-.139.178-.198.206-.088.569-.093.998-.09.334.004.43.022.561.05.304.064.294.27.274.714a9.697 9.697 0 0 0-.013.464l-.003.126c-.007.228-.015.488.156.585.087.05.301.007.837-.79.254-.378.444-.822.444-.822s.042-.08.107-.113c.066-.035.155-.024.155-.024l1.203-.007s.361-.038.42.105c.061.15-.135.5-.627 1.075-.463.541-.69.743-.672.92.013.13.16.247.445.48.592.481.75.734.788.794a.326.326 0 0 0 .007.01c.265.386-.294.416-.294.416l-1.069.013s-.23.04-.531-.142c-.158-.095-.313-.25-.46-.398-.225-.226-.433-.435-.61-.386-.298.083-.289.646-.289.646s.002.12-.066.184c-.073.07-.218.083-.218.083Z"/></svg>
+            </a>
           </li>
           <li class="socialmedia-item">
-            <a class="socialmedia-link" href="http://facebook.com/htmlacademy"></a>
+            <span class="visually-hidden">Фэйсбук</span>
+            <a class="footer-socialmedia-link" href="http://facebook.com/htmlacademy">
+              <svg class="socialmedia-icon" width="16" height="16" viewbox="0 0 16 16" fill="#FCFCFC" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-6.381.6h-.952V12H7.143V8.6H6V7h1.143V5.88c0-1.217.734-1.88 1.769-1.88.495 0 .964.039 1.088.056V5.4h-.571c-.762 0-.762.388-.762.8V7H10l-.381 1.6Z"/></svg>
+            </a>
           </li>
           <li class="socialmedia-item">
-            <a class="socialmedia-link" href="http://instagram.com/htmlacademy"></a>
+            <span class="visually-hidden">Инстаграм</span>
+            <a class="socialmedia-link" href="http://instagram.com/htmlacademy">
+              <svg class="socialmedia-icon" width="16" height="16" viewbox="0 0 16 16" fill="#FCFCFC" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM9.6488 4.024C9.2224 4.004 9.0868 4 8 4C6.9132 4 6.7776 4.0052 6.3512 4.024C5.9248 4.044 5.6352 4.1108 5.38 4.21C5.11297 4.31029 4.87107 4.46769 4.6712 4.6712C4.46752 4.87093 4.31009 5.11287 4.21 5.38C4.1108 5.6352 4.044 5.9248 4.024 6.3512C4.004 6.7776 4 6.9132 4 8C4 9.0868 4.0052 9.2224 4.024 9.6488C4.044 10.0748 4.1108 10.3652 4.21 10.62C4.31037 10.887 4.46776 11.1289 4.6712 11.3288C4.87101 11.5324 5.11293 11.6898 5.38 11.79C5.6352 11.8888 5.9252 11.956 6.3512 11.976C6.7776 11.996 6.9132 12 8 12C9.0868 12 9.2224 11.9948 9.6488 11.976C10.0748 11.956 10.3652 11.8888 10.62 11.79C10.8869 11.6895 11.1288 11.5321 11.3288 11.3288C11.5324 11.129 11.6899 10.8871 11.79 10.62C11.8888 10.3648 11.956 10.0748 11.976 9.6488C11.996 9.2224 12 9.0868 12 8C12 6.9132 11.9948 6.7776 11.976 6.3512C11.956 5.9252 11.8888 5.6348 11.79 5.38C11.6896 5.11304 11.5322 4.87116 11.3288 4.6712C11.1064 4.4492 10.884 4.3116 10.62 4.21C10.3648 4.1108 10.0748 4.044 9.6488 4.024ZM6.58579 6.58579C6.96086 6.21071 7.46957 6 8 6C8.53043 6 9.03914 6.21071 9.41421 6.58579C9.78929 6.96086 10 7.46957 10 8C10 8.53043 9.78929 9.03914 9.41421 9.41421C9.03914 9.78929 8.53043 10 8 10C7.46957 10 6.96086 9.78929 6.58579 9.41421C6.21071 9.03914 6 8.53043 6 8C6 7.46957 6.21071 6.96086 6.58579 6.58579ZM10.4536 5.54645C10.5473 5.64021 10.6 5.76739 10.6 5.9C10.6 6.03261 10.5473 6.15979 10.4536 6.25355C10.3598 6.34732 10.2326 6.4 10.1 6.4C9.96739 6.4 9.84021 6.34732 9.74645 6.25355C9.65268 6.15979 9.6 6.03261 9.6 5.9C9.6 5.76739 9.65268 5.64021 9.74645 5.54645C9.84021 5.45268 9.96739 5.4 10.1 5.4C10.2326 5.4 10.3598 5.45268 10.4536 5.54645ZM8.84853 7.15147C8.62348 6.92643 8.31826 6.8 8 6.8C7.68174 6.8 7.37652 6.92643 7.15147 7.15147C6.92643 7.37652 6.8 7.68174 6.8 8C6.8 8.31826 6.92643 8.62348 7.15147 8.84853C7.37652 9.07357 7.68174 9.2 8 9.2C8.31826 9.2 8.62348 9.07357 8.84853 8.84853C9.07357 8.62348 9.2 8.31826 9.2 8C9.2 7.68174 9.07357 7.37652 8.84853 7.15147Z"/></svg>
+            </a>
           </li>
         </ul>
       </section>
@@ -95,13 +105,13 @@
             <h3 class="shopping-gift-title">Малинка даром!</h3>
             <img class="shopping-gift-img" src="img/raspberry-waffle-cone.png" width="181" height="284" alt="Вкусная малина в вафельном рожке">
             <p class="shopping-gift-description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <a class="button-link" href="#">Хочу подарок</a>
+            <a class="button-blank button-link" href="#">Хочу подарок</a>
           </li>
           <li class="shopping-gift-item">
             <h3 class="shopping-gift-title">Маршмеллоу даром!</h3>
             <img class="shopping-gift-img" src="img/marshmallow-waffle-cone.png" width="232" height="359" alt="Мягкий маршмеллоу в вафельном рожке">
             <p class="shopping-gift-description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
-            <a class="button-link" href="#">Хочу подарок</a>
+            <a class="button-blank button-link" href="#">Хочу подарок</a>
           </li>
         </ul>
       </section>
@@ -157,26 +167,30 @@
         <form class="blog-publication-subscribe" action="https://echo.htmlacademy.ru/">
           <p class="blog-publication-description">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
           <input type="email" name="newsletter-email" id="newsletter-email" placeholder="email@example.com" required>
-          <button class="button-all button-normal-accent" type="submit">Отправить</button>
+          <button class="button-blank button-normal-accent" type="submit">Отправить</button>
         </form>
       </section>
       <section class="home-delivery">
-        <h2 class="home-delivery-subject">Доставка любимого мороженого на дом</h2>
-        <p class="home-delivery-description">Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом и курьер привезет вам ваш заказ в течение часа!</p>
-        <form class="home-delivery-form" action="https://echo.htmlacademy.ru/" method="POST">
-          <p class="home-delivery-form-description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-          <p>
-            <label for="delivery-date">Дата</label>
-            <input type="date" name="delivery-date" id="delivery-date" required>
-            <label for="delivery-phone-consumer">Телефон</label>
-            <input type="tel" name="delivery-phone-consumer" id="delivery-phone-consumer" placeholder="+7 800 999-00-00" required>
-          </p>
-          <p>
-            <label for="delivery-address-consumer">Адрес</label>
-            <input type="text" name="delivery-address-consumer" id="delivery-address-consumer" placeholder="ул. Большая Конюшенная, 19/8" required>
-          </p>
-          <button class="button-all button-normal-accent" type="submit">Отправить</button>
-        </form>
+        <div class="home-delivery-column-info">
+          <h2 class="home-delivery-subject">Доставка любимого мороженого на дом</h2>
+          <p class="home-delivery-description">Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом и курьер привезет вам ваш заказ в течение часа!</p>
+        </div>
+        <div class="home-delivery-column-form">
+          <form class="home-delivery-form" action="https://echo.htmlacademy.ru/" method="POST">
+            <p class="home-delivery-form-description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+            <p>
+              <label for="delivery-date">Дата</label>
+              <input type="date" name="delivery-date" id="delivery-date" required>
+              <label for="delivery-phone-consumer">Телефон</label>
+              <input type="tel" name="delivery-phone-consumer" id="delivery-phone-consumer" placeholder="+7 800 999-00-00" required>
+            </p>
+            <p>
+              <label for="delivery-address-consumer">Адрес</label>
+              <input type="text" name="delivery-address-consumer" id="delivery-address-consumer" placeholder="ул. Большая Конюшенная, 19/8" required>
+            </p>
+            <button class="button-blank button-normal-accent" type="submit">Отправить</button>
+          </form>
+        </div>
       </section>
       <section class="contact-shop">
         <div class="contact-shop-block">
@@ -185,58 +199,68 @@
           <p class="contact-shop-block-description">Для заказов по телефону:</p>
           <a class="contact-shop-block-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           <span class="contact-shop-block-officetime">(с 10 до 20 ежедневно)</span>
-          <button class="button-all button-normal-accent" type="button">Форма обратной связи</button>
+          <button class="button-blank button-normal-accent" type="button">Форма обратной связи</button>
         </div>
       </section>
     </div>
   </main>
 
-  <footer class="page-footer">
-    <div class="container">
-      <section class="footer-socialmedia">
-        <ul class="footer-socialmedia-list">
-          <li class="footer-socialmedia-item">
-            <a class="footer-socialmedia-link" href="http://vk.com/htmlacademy"></a>
-          </li>
-          <li class="footer-socialmedia-item">
-            <a class="footer-socialmedia-link" href="http://facebook.com/htmlacademy"></a>
-          </li>
-          <li class="footer-socialmedia-item">
-            <a class="footer-socialmedia-link" href="http://instagram.com/htmlacademy"></a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-paperwork">
-        <ol class="footer-paperwork-list">
-          <li class="fooret-paperwork-item">
-            <a class="footer-paperword-link" href="#" >
-              <b>Для поставщиков</b>
-            </a>
-          </li>
-          <li class="fooret-paperwork-item">
-            <a class="footer-paperword-link" href="#">
-              О производстве
-            </a>
-          </li>
-          <li class="fooret-paperwork-item">
-            <a class="footer-paperword-link" href="#">
-              Наши документы
-            </a>
-          </li>
-          <li class="fooret-paperwork-item">
-            <a class="footer-paperword-link" href="#">
-              Экологические стандарты
-            </a>
-          </li>
-        </ol>
-      </section>
-      <section class="footer-copyright">
-        <a href="http://htmlacademy.ru">
-          <img class="footer-copyright-logo" src="img/logo-htmlacademy.svg" width="93" height="27" alt="Логотип разработчика - HTML Academy">
-        </a>
-        <p class="footer-copyright-text">Сделано в <a class="footer-copyright-link" href="http://htmlacademy.ru">.html academy</a> © 2021</p>
-      </section>
-    </div>
+  <footer class="page-footer container">
+    <section class="footer-socialmedia">
+      <ul class="footer-socialmedia-list">
+        <li class="footer-socialmedia-item">
+          <span class="visually-hidden">Вконтакте</span>
+          <a class="footer-socialmedia-link" href="http://vk.com/htmlacademy">
+            <svg class="socialmedia-icon" width="16" height="16" viewbox="0 0 16 16" fill="#FCFCFC" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.392 9.983h-.478s-1.055.056-1.984-.792c-1.013-.925-1.908-2.76-1.908-2.76s-.052-.12.004-.178c.063-.066.235-.07.235-.07l1.143-.006s.108.016.185.065c.063.041.099.118.099.118s.185.41.43.78c.477.723.7.881.861.803.237-.112.166-1.022.166-1.022s.004-.33-.12-.477c-.095-.114-.275-.147-.354-.156-.065-.008.041-.139.178-.198.206-.088.569-.093.998-.09.334.004.43.022.561.05.304.064.294.27.274.714a9.697 9.697 0 0 0-.013.464l-.003.126c-.007.228-.015.488.156.585.087.05.301.007.837-.79.254-.378.444-.822.444-.822s.042-.08.107-.113c.066-.035.155-.024.155-.024l1.203-.007s.361-.038.42.105c.061.15-.135.5-.627 1.075-.463.541-.69.743-.672.92.013.13.16.247.445.48.592.481.75.734.788.794a.326.326 0 0 0 .007.01c.265.386-.294.416-.294.416l-1.069.013s-.23.04-.531-.142c-.158-.095-.313-.25-.46-.398-.225-.226-.433-.435-.61-.386-.298.083-.289.646-.289.646s.002.12-.066.184c-.073.07-.218.083-.218.083Z"/></svg>
+          </a>
+        </li>
+        <li class="footer-socialmedia-item">
+          <span class="visually-hidden">Фэйсбук</span>
+          <a class="footer-socialmedia-link" href="http://facebook.com/htmlacademy">
+            <svg class="socialmedia-icon" width="16" height="16" viewbox="0 0 16 16" fill="#FCFCFC" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-6.381.6h-.952V12H7.143V8.6H6V7h1.143V5.88c0-1.217.734-1.88 1.769-1.88.495 0 .964.039 1.088.056V5.4h-.571c-.762 0-.762.388-.762.8V7H10l-.381 1.6Z"/></svg>
+          </a>
+        </li>
+        <li class="footer-socialmedia-item">
+          <span class="visually-hidden">Инстаграм</span>
+          <a class="footer-socialmedia-link" href="http://instagram.com/htmlacademy">
+            <svg class="socialmedia-icon" width="16" height="16" viewbox="0 0 16 16" fill="#FCFCFC" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM9.6488 4.024C9.2224 4.004 9.0868 4 8 4C6.9132 4 6.7776 4.0052 6.3512 4.024C5.9248 4.044 5.6352 4.1108 5.38 4.21C5.11297 4.31029 4.87107 4.46769 4.6712 4.6712C4.46752 4.87093 4.31009 5.11287 4.21 5.38C4.1108 5.6352 4.044 5.9248 4.024 6.3512C4.004 6.7776 4 6.9132 4 8C4 9.0868 4.0052 9.2224 4.024 9.6488C4.044 10.0748 4.1108 10.3652 4.21 10.62C4.31037 10.887 4.46776 11.1289 4.6712 11.3288C4.87101 11.5324 5.11293 11.6898 5.38 11.79C5.6352 11.8888 5.9252 11.956 6.3512 11.976C6.7776 11.996 6.9132 12 8 12C9.0868 12 9.2224 11.9948 9.6488 11.976C10.0748 11.956 10.3652 11.8888 10.62 11.79C10.8869 11.6895 11.1288 11.5321 11.3288 11.3288C11.5324 11.129 11.6899 10.8871 11.79 10.62C11.8888 10.3648 11.956 10.0748 11.976 9.6488C11.996 9.2224 12 9.0868 12 8C12 6.9132 11.9948 6.7776 11.976 6.3512C11.956 5.9252 11.8888 5.6348 11.79 5.38C11.6896 5.11304 11.5322 4.87116 11.3288 4.6712C11.1064 4.4492 10.884 4.3116 10.62 4.21C10.3648 4.1108 10.0748 4.044 9.6488 4.024ZM6.58579 6.58579C6.96086 6.21071 7.46957 6 8 6C8.53043 6 9.03914 6.21071 9.41421 6.58579C9.78929 6.96086 10 7.46957 10 8C10 8.53043 9.78929 9.03914 9.41421 9.41421C9.03914 9.78929 8.53043 10 8 10C7.46957 10 6.96086 9.78929 6.58579 9.41421C6.21071 9.03914 6 8.53043 6 8C6 7.46957 6.21071 6.96086 6.58579 6.58579ZM10.4536 5.54645C10.5473 5.64021 10.6 5.76739 10.6 5.9C10.6 6.03261 10.5473 6.15979 10.4536 6.25355C10.3598 6.34732 10.2326 6.4 10.1 6.4C9.96739 6.4 9.84021 6.34732 9.74645 6.25355C9.65268 6.15979 9.6 6.03261 9.6 5.9C9.6 5.76739 9.65268 5.64021 9.74645 5.54645C9.84021 5.45268 9.96739 5.4 10.1 5.4C10.2326 5.4 10.3598 5.45268 10.4536 5.54645ZM8.84853 7.15147C8.62348 6.92643 8.31826 6.8 8 6.8C7.68174 6.8 7.37652 6.92643 7.15147 7.15147C6.92643 7.37652 6.8 7.68174 6.8 8C6.8 8.31826 6.92643 8.62348 7.15147 8.84853C7.37652 9.07357 7.68174 9.2 8 9.2C8.31826 9.2 8.62348 9.07357 8.84853 8.84853C9.07357 8.62348 9.2 8.31826 9.2 8C9.2 7.68174 9.07357 7.37652 8.84853 7.15147Z"/></svg>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="footer-paperwork">
+      <ol class="footer-paperwork-list">
+        <li class="fooret-paperwork-item">
+          <a class="footer-paperword-link" href="#" >
+            <b>Для поставщиков</b>
+          </a>
+        </li>
+        <li class="fooret-paperwork-item">
+          <a class="footer-paperword-link" href="#">
+            О производстве
+          </a>
+        </li>
+        <li class="fooret-paperwork-item">
+          <a class="footer-paperword-link" href="#">
+            Наши документы
+          </a>
+        </li>
+        <li class="fooret-paperwork-item">
+          <a class="footer-paperword-link" href="#">
+            Экологические стандарты
+          </a>
+        </li>
+      </ol>
+    </section>
+    <section class="footer-copyright">
+      <a href="http://htmlacademy.ru">
+        <img class="footer-copyright-logo" src="img/logo-htmlacademy.svg" width="93" height="27" alt="Логотип разработчика - HTML Academy">
+      </a>
+      <p class="footer-copyright-text">Сделано в <a class="footer-copyright-link" href="http://htmlacademy.ru">.html academy</a> © 2021</p>
+    </section>
   </footer>
   
 </body>
