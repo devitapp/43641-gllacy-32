@@ -64,7 +64,7 @@
   margin: 0 auto;
 }
 
-/* Доступное скрытие элементов */
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -75,10 +75,8 @@
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
 }
-/* END A11y*/
 
-/* UI-Kit CSS*/
-
+/* Buttons Style Guide*/
 .button-blank {
   padding: 12px 32px;
   font-weight: 700;
@@ -91,6 +89,19 @@
   border-radius: 26px;
   box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
   cursor: pointer;
+}
+
+.button-nav-user:hover{
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.button-nav-user:focus-visible{
+  background-color: rgba(252, 252, 252, 0.5);
+  outline: 2px solid #2D3440;
+}
+
+.button-nav-user:active {
+  background-color: #FCFCFC;
 }
 
 .pagination-show-more {
@@ -164,7 +175,7 @@
   background-color: #FCFCFC;
   outline: 4px solid #2D3440;
 }
-/* END UI-Kit */
+/* END Buttons Style Guide */
 
 /* Временное обозначение слайдера */
 .slider {
@@ -205,6 +216,7 @@
   width: 400px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   list-style-type: none;
 }
 
@@ -291,11 +303,13 @@
   font-weight: 700; 
   text-decoration: none;
   color: #2c3e50;
+  align-self: center;
 }
 
 .wrapper-navigation-user {
   margin-left: auto;
   display: flex;
+  align-items: center;
 }
 
 .navigation-user {
@@ -322,30 +336,11 @@
 
 .site-navigation-link-login,
 .site-navigation-link-basket {
-  text-decoration: none;
+  padding: 8px 16px;
   background-color: rgba(252, 252, 252, 0.4);
   border-radius: 26px;
   color: #2D3440;
-  padding: 8px 16px;
-}
-
-.site-navigation-search-button:hover,
-.site-navigation-link-login:hover,
-.site-navigation-link-basket:hover {
-  background-color: rgba(252, 252, 252, 0.5);
-}
-
-.site-navigation-search-button:focus-visible,
-.site-navigation-link-login:focus-visible,
-.site-navigation-link-basket:focus-visible {
-  background-color: rgba(252, 252, 252, 0.5);
-  outline: 2px solid #2D3440;
-}
-
-.site-navigation-search-button:active,
-.site-navigation-link-login:active,
-.site-navigation-link-basket:active {
-  background-color: #FCFCFC;
+  text-decoration: none;
 }
 
 .site-navigation-search-form {
@@ -378,12 +373,9 @@
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style-type: none;
-}
-
-.shopping-gift-item {
-  width: 570px;
 }
 
 .shopping-gift-item {
@@ -404,7 +396,6 @@ line-height: 30px;
 }
 
 .infoblock-shop {
-  width: 1170px; 
   margin-bottom: 80px;
   border-radius: 16px;
   background-color: #FCFCFC;
@@ -605,7 +596,6 @@ line-height: 30px;
 
 .inner-pagination {
   display: flex;
-  flex-direction: row-reverse;
 }
 
 .pagination-list {
