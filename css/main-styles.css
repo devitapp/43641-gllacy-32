@@ -22,20 +22,16 @@
   font-display: swap;
 }
 
-
 .page {
   height: 100%;
 }
 
-.page-header {
-  display: flex;
-}
-
 .page-body {
+  min-width: 1170px;
   min-height: 100%;
   margin: 0;
   margin-top: 24px;
-  padding: 0;
+  padding: 0 15px;
   display: flex;
   flex-direction: column;
   font-family: Inter, Arial, sans-serif;
@@ -43,13 +39,20 @@
   line-height: 22px;
   color: #2D3440;
   background-color: #FEAFC3;
+  box-sizing: border-box;
+}
+
+.page-header {
+  display: flex;
+  padding-bottom: 32px;
 }
 
 .page-main {
-  margin-bottom: 48px;
+  margin-bottom: 24px;
 }
 
 .page-footer {
+  padding: 48px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -104,8 +107,103 @@
   background-color: #FCFCFC;
 }
 
+.button-link {
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: 4px solid rgba(252, 252, 252, 0.4);
+}
+
+.button-link:hover {
+  background-color: rgba(252, 252, 252, 0.4);
+  outline: 4px solid #FCFCFC;
+}
+
+.button-link:focus-visible {
+  background-color: #FCFCFC;
+  outline: 4px solid #2D3440;
+}
+
+.button-link:active {
+  background-color: #FFCBD8;
+}
+
+.button-normal-accent {
+  background-color: #FF2F64;
+  color: #FCFCFC;
+  outline: 4px solid rgba(255, 47, 100, 0.3);
+  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+}
+
+.button-normal-accent:hover {
+  background-color: rgba(252, 252, 252, 0.3);
+  outline: 4px solid #FF2F64;
+  color: #2D3440;
+}
+
+.button-normal-accent:focus-visible {
+  background-color: #FF2F64;
+  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  outline: 2px solid #2D3440;
+}
+
+.button-normal-accent:active {
+  background-color: #FFCBD8;
+}
+
+.button-order-normal {
+  width: 32px;
+  height: 32px;
+  background-color: #FF2F64;
+  background-image: url('data:image/svg+xml,%3Csvg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M1.1667.25a.6667.6667 0 1 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8255 1.8255 0 0 0 1.8183 1.4691h5.6207a1.8258 1.8258 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107L4.1381.7858A.6667.6667 0 0 0 3.4844.25H1.1667ZM5.691 8.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z" fill="%23FCFCFC"/%3E%3C/svg%3E');
+   /* !^Experimental^ */
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  border: none;
+}
+
+.button-order-normal:hover{
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 2px solid #FF2F64;
+  background-image: url('data:image/svg+xml,%3Csvg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M1.1667.25a.6667.6667 0 1 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8255 1.8255 0 0 0 1.8183 1.4691h5.6207a1.8258 1.8258 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107L4.1381.7858A.6667.6667 0 0 0 3.4844.25H1.1667ZM5.691 8.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z" fill="%232D3440"/%3E%3C/svg%3E');
+  /* !^Experimental^ */
+}
+
+
+.button-order-normal:focus-visible {
+  background-color: #FF2F64;
+  border: 2px solid #2D3440;
+}
+
+.button-order-normal:active{
+  background-color: #FFE5EC;
+}
+
+.filter-product-button {
+  min-height: 36px;
+  margin: 0;
+  padding: 8px 53px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  border: none;
+  border-radius: 26px;
+  background-color: rgba(252, 252, 252, 0.3);
+  outline: 2px solid #FCFCFC;
+}
+
+.filter-product-button:hover {
+  background-color: #FCFCFC;
+  outline: 2px solid rgba(252, 252, 252, 0.3);
+}
+
+.filter-product-button:focus-visible {
+  background-color: rgba(252, 252, 252, 0.3);
+  outline: 2px solid #2D3440;
+}
+
 .pagination-show-more {
-  height: 54px;
+  min-height: 54px;
   margin: 0 auto;
   font-weight: 700;
   outline: 4px solid rgba(252, 252, 252, 0.4);
@@ -121,60 +219,10 @@
   outline: 4px solid #2D3440;
 }
 
-.button-link {
-  text-decoration: none;
-  outline: 4px solid rgba(252, 252, 252, 0.4);
+.pagination-show-more:active{
+  background-color:#FFCBD8;
 }
 
-.button-link:hover {
-  background-color: rgba(252, 252, 252, 0.4);
-  outline: 4px solid #FCFCFC;
-}
-
-.button-link:focus-visible {
-  background-color: #FCFCFC;
-  outline: 4px solid #2D3440;
-}
-
-.button-normal-accent {
-  background-color: #FF2F64;
-  outline: 4px solid rgba(255, 47, 100, 0.3);
-  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
-}
-
-.button-normal-accent:hover {
-  background-color: rgba(252, 252, 252, 0.3);
-  outline: 4px solid #FF2F64;
-}
-
-.button-normal-accent:focus-visible {
-  background-color: #FF2F64;
-  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
-  outline: 2px solid #2D3440;
-}
-
-.button-order-normal {
-  width: 32px;
-  height: 32px;
-  background-color: #FF2F64;
-  border-radius: 50%;
-  border: none;
-}
-
-.filter-product-button {
-  font-weight: 700;
-  outline: 4px solid rgba(252, 252, 252, 0.4);
-}
-
-.filter-product-button:hover {
-  background-color: rgba(252, 252, 252, 0.4);
-  outline: 4px solid #FCFCFC;
-}
-
-.filter-product-button:focus-visible {
-  background-color: #FCFCFC;
-  outline: 4px solid #2D3440;
-}
 /* END Buttons Style Guide */
 
 /* Временное обозначение слайдера */
@@ -348,21 +396,13 @@
 }
 
 .shopping-gift-subject,
-.catalog-goods-subject,
-.infoblock-shop-subject{
+.catalog-goods-subject{
+  margin: 0;
   margin-bottom: 56px;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
   text-align: center;
-}
-
-.home-delivery-subject {
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 46px;
-  text-align: left;
-  
 }
 
 .shopping-gift {
@@ -380,49 +420,93 @@
 
 .shopping-gift-item {
   width: 570px;
+  margin-bottom: 30px;
+  padding: 40px;
+  box-sizing: border-box;
   border-radius: 16px;
   background-color: #FF7799;
 }
 
+.shopping-gift-item:last-child,
+.shopping-gift-item:nth-last-child(2) {
+  margin-bottom: 0;
+}
+
 .shopping-gift-title {
-font-weight: 700;
-font-size: 24px;
-line-height: 30px;
+  margin: 0;
+  padding-bottom: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .shopping-gift-description {
+  margin: 0;
+  padding-bottom: 50px;
   font-size: 16px;
   line-height: 22px;
 }
 
 .infoblock-shop {
   margin-bottom: 80px;
+  padding: 56px 40px;
   border-radius: 16px;
   background-color: #FCFCFC;
 }
 
+.infoblock-shop-subject {
+  margin: 0;
+  padding-bottom: 56px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
 .infoblock-shop-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* ^Для визуальной красоты блока^ */
   list-style-type: none;
 }
 
 .infoblock-shop-item {
+  width: 442px;
+  padding-right: 95px;
+  padding-bottom: 40px;
   font-size: 16px;
   line-height: 22px;
 }
 
+.infoblock-shop-item:last-child,
+.infoblock-shop-item:nth-last-child(2) {
+  padding-bottom: 0;
+}
+
+.infoblock-shop-item:nth-child(even) {
+  padding-right: 0;
+}
+
 .blog-publication {
-  margin-bottom: 76px;
+  margin-bottom: 50px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .blog-publication-post {
   width: 570px;
+  margin-bottom: 30px;
+  padding: 32px;
   background-color: #FCFCFC;
   background-image: url(../img/fruit-sherbet.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
   border-radius: 16px;
+  box-sizing: border-box;
 }
 
 .blog-publication-subtitle,
@@ -432,9 +516,12 @@ line-height: 30px;
 
 .blog-publication-subtitle {
   width: 570px;
+  padding-bottom: 12px;
+  display: block;
 }
 
 .blog-publication-title {
+  margin: 0;
   width: 305px;
   font-size: 24px;
   line-height: 30px;
@@ -447,30 +534,54 @@ line-height: 30px;
 
 .blog-publication-subscribe {
   width: 570px;
+  margin-bottom: 30px;
+  padding: 26px;
   background-color: #FCFCFC;
   border-radius: 16px;
+  box-sizing: border-box;
 }
 
 .blog-publication-description {
   width: 506px;
+  margin:0;
+  padding-bottom: 42px;
   color: #565C66;
 }
 
 .home-delivery {
   display: flex;
-  width: 1170px;
   margin-bottom: 80px;
+  padding-left: 100px;
   background-color: #FCFCFC;
   background-image: url(../img/delivery-ice-cream.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
   border-radius: 16px;
   justify-content: space-between;
-  align-items: center;
+}
+
+.home-delivery-column-info {
+  margin: auto 0;
+}
+
+.home-delivery-column-form {
+  padding: 64px;
+  padding-left: 0;
+}
+
+.home-delivery-subject {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 24px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: left;
 }
 
 .home-delivery-form {
   width: 500px;
+  padding: 40px;
   background-color: #FCFCFC;
   box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
@@ -483,10 +594,12 @@ line-height: 30px;
 
 .home-delivery-description {
   width: 371px;
+  margin: 0;
 }
 
 .contact-shop {
   width: 1170px;
+  padding: 64px;
   background-color: #FCFCFC;
   background-image: url(../img/ice-cream-cone.jpg);
   background-repeat: no-repeat;
@@ -496,13 +609,10 @@ line-height: 30px;
 
 .contact-shop-block {
   width: 343px;
+  padding: 40px;
   background-color: #FCFCFC;
   box-shadow: 0px 8px 16px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
-}
-
-.contact-shop-block-description {
-  color: #565C66;
 }
 
 .contact-shop-block-location,
@@ -515,7 +625,34 @@ line-height: 30px;
   color: #2D3440;
 }
 
-.footer-paperword-link {
+.contact-shop-block-description {
+  margin: 0;
+  padding-bottom: 12px;
+  color: #565C66;
+}
+
+.contact-shop-block-location {
+  padding-bottom: 24px;
+}
+
+.contact-shop-block-officetime {
+  display: block;
+  padding-bottom: 24px;
+  font-size: 14px;
+}
+
+.footer-paperwork-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-paperwork-item {
+  margin-bottom: 8px;
+
+}
+
+.footer-paperwork-link {
   font-size: 14px;
   text-decoration: none;
   color: #2D3440;
@@ -530,9 +667,22 @@ line-height: 30px;
 
 
 /* Page Catalog */
+
 .breadcrumbs-list {
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs-item {
+  margin-right: 28px;
+}
+
+.breadcrumbs-item:last-child {
+  margin-right: 0;
 }
 
 .breadcrumbs-link {
@@ -548,6 +698,14 @@ line-height: 30px;
   line-height: 20px;
 }
 
+.inner-header-subject {
+  margin: 0;
+  margin-bottom: 40px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
 .inner-filter-product {
   margin-bottom: 56px;
 }
@@ -557,6 +715,21 @@ line-height: 30px;
   flex-wrap: wrap;
   font-size: 14px;
   line-height: 20px;
+}
+
+.inner-filter-product-sorting,
+.inner-filter-product-price,
+.inner-filter-product-price, 
+.inner-filter-product-fatness,
+.inner-filter-product-filling {
+  margin: 0;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  padding: 0;
+  background-color: rgba(252, 252, 252, 0.3);
+  border: none;
+  border-radius: 26px;
+  box-sizing: border-box;
 }
 
 .catalog-goods {
@@ -595,12 +768,18 @@ line-height: 30px;
 }
 
 .inner-pagination {
+  padding: 40px 0;
+  padding-bottom: 80px;
   display: flex;
+  border-bottom: 1px solid rgba(252, 252, 252, 0.3);
 }
 
 .pagination-list {
   display: flex;
+  margin: 0;
+  padding: 0;
   flex-wrap: wrap;
+  align-items: center;
   list-style-type: none;
 }
 
@@ -635,6 +814,10 @@ line-height: 30px;
 
 .pagination-link:focus-visible {
   background: rgba(252, 252, 252, 0.3);
+  outline: 1px solid #2D3440; 
+}
+
+.pagination-link:active {
   border: 1px solid #2D3440;
 }
 
@@ -648,9 +831,5 @@ line-height: 30px;
 }
 
 .footer-socialmedia-item {
-  list-style-type: none;
-}
-
-.footer-paperwork-list {
   list-style-type: none;
 }
