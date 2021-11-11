@@ -236,6 +236,7 @@
 
 .slider::before {
   content: "Slider";
+  margin: 0 auto;
   padding-left: 10px;
   font-size: 21px;
   color: #2c3e50;
@@ -245,7 +246,18 @@
 .socialmedia-list {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
+}
+
+.socialmedia-item {
+  margin-right: 16px;
+  list-style-type: none;
+}
+
+.socialmedia-item:last-child{
+  margin-right: 0;
 }
 
 .header-logo-link {
@@ -827,9 +839,36 @@
 
 .footer-socialmedia-list {
   margin: 0;
+  margin-left: 4px;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer-socialmedia-item {
+  margin-right: 16px;
   list-style-type: none;
+}
+
+.footer-socialmedia-item:last-child{
+  margin-right: 0;
+}
+
+.socialmedia-link,
+.footer-socialmedia-link {
+  display: inline-flex;
+  outline: 2px solid rgba(252, 252, 252, 0.2);
+  border-radius: 50%;
+}
+
+.socialmedia-link:hover,
+.footer-socialmedia-link:hover {
+  background-color: #2D3440;
+  border-radius: 50%;
+}
+
+.socialmedia-link:focus-visible,
+.footer-socialmedia-link:focus-visible {
+  outline: 2px solid #2D3440;
+  background-color: #2D3440;
 }
