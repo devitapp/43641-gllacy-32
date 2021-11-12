@@ -11,7 +11,7 @@
   <link rel="icon" type="image/ico" sizes="32x32" href="img/favicon-32.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
   <link rel="stylesheet" href="css/main-styles.css">
-  <title>Глэйси - магазин по продаже мороженого</title>
+  <title>FORK - Глэйси - магазин по продаже мороженого</title>
 </head>
 
 <body class="page-body">
@@ -89,7 +89,7 @@
       <section class="inner-filter-product">
         <form class="filter-product-form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="inner-filter-product-sorting">
-            <legend>Сортировка:</legend>
+            <legend class="inner-filter-name">Сортировка:</legend>
             <select name="filter-product-popular">
               <option value="по популярности">по популярности</option>
               <option value="по жирности">по жирности</option>
@@ -98,12 +98,12 @@
             </select>
           </fieldset>
           <fieldset class="inner-filter-product-price">
-            <legend>Цена: 100 ₽ – 500 ₽</legend>
+            <legend class="inner-filter-name">Цена: 100 ₽ – 500 ₽</legend>
             <button class="filter-range-toggle toggle-min" type="button"></button>
             <button class="filter-range-toggle toggle-max" type="button"></button>
           </fieldset>
           <fieldset class="inner-filter-product-fatness">
-            <legend>Жирность:</legend>
+            <legend class="inner-filter-name">Жирность:</legend>
             <label>
               <input type="radio" name="filter-fatness" value="0%">
               0%
@@ -122,7 +122,7 @@
             </label>
           </fieldset>
           <fieldset class="inner-filter-product-filling">
-            <legend>Наполнители:</legend>
+            <legend class="inner-filter-name">Наполнители:</legend>
             <label>
               <input type="checkbox" name="filter-filling" value="шоколадные" checked>
               шоколадные
@@ -153,85 +153,109 @@
           <h4 class="catalog-goods-title">Малинка</h4>
           <img class="catalog-goods-img" src="img/catalog/item-raspberry-ice-cream.jpg" width="168" height="168" alt="Розовый шарик мороженого">
           <p class="catalog-goods-description">Сливочное мороженое с малиновым джемом</p>
-          <b class="catalog-goods-price">310 ₽/кг</b>
-          <button class="button-order-normal" type="button"></button>
+          <div class="catalog-goods-cost">
+            <b class="catalog-goods-price">310 ₽/кг</b>
+            <button class="button-order-normal" type="button"></button>
+          </div>  
         </li>
         <li class="catalog-goods-item">
           <h4 class="catalog-goods-title">Фисташка</h4>
           <img class="catalog-goods-img" src="img/catalog/item-pistachio-ice-cream.jpg" width="168" height="168" alt="Салатовый шарик мороженого">
           <p class="catalog-goods-description">Фисташковый пломбир с кусочками шоколада</p>
-          <b class="catalog-goods-price">340 ₽/кг</b>
-          <button class="button-order-normal" type="button"></button>
+          <div class="catalog-goods-cost">
+            <b class="catalog-goods-price">340 ₽/кг</b>
+            <button class="button-order-normal" type="button"></button>
+          </div>
         </li>
         <li class="catalog-goods-item">
           <h4 class="catalog-goods-title">Черника</h4>
           <img class="catalog-goods-img" src="img/catalog/item-blueberry-ice-cream.jpg" width="168" height="168" alt="Белый шарик мороженного с фиолетовыми вкраплениями джема">
           <p class="catalog-goods-description">Крем-брюле с черничным джемом</p>
-          <b class="catalog-goods-price">330 ₽/кг</b>
-          <button class="button-order-normal" type="button"></button>
+          <div class="catalog-goods-cost">
+            <b class="catalog-goods-price">330 ₽/кг</b>
+            <button class="button-order-normal" type="button"></button>
+          </div>
         </li>
         <li class="catalog-goods-item">
           <h4 class="catalog-goods-title">Бабл-гам</h4>
           <img class="catalog-goods-img" src="img/catalog/item-bubblegum-ice-cream.jpg" width="168" height="168" alt="Бирюзовый шарик мороженого с посыпкой">
           <p class="catalog-goods-description">Ванильный пломбир со сладкой посыпкой</p>
-          <b class="catalog-goods-price">320 ₽/кг</b>
-          <button class="button-order-normal" type="button"></button>
+          <div class="catalog-goods-cost">
+            <b class="catalog-goods-price">320 ₽/кг</b>
+            <button class="button-order-normal" type="button"></button>
+          </div>
         </li>
         <li class="catalog-goods-item">
           <h4 class="catalog-goods-title">Ежевика</h4>
           <img class="catalog-goods-img" src="img/catalog/item-blackberry-ice-cream.jpg" width="168" height="168" alt="Шарик мороженого с джемом еживики">
           <p class="catalog-goods-description">Сливочное мороженое с ежевичным джемом</p>
-          <b class="catalog-goods-price">330 ₽/кг</b>
-          <button class="button-order-normal" type="button"></button>
+          <div class="catalog-goods-cost">
+            <b class="catalog-goods-price">330 ₽/кг</b>
+            <button class="button-order-normal" type="button"></button>
+          </div>
         </li>
         <li class="catalog-goods-item">
           <h4 class="catalog-goods-title">Банан</h4>
           <img class="catalog-goods-img" src="img/catalog/item-banana-ice-cream.jpg" width="168" height="168" alt="Шарик мороженого со вкусом банана">
           <p class="catalog-goods-description">Сливочный пломбир с банановым вкусом</p>
-          <b class="catalog-goods-price">340 ₽/кг</b>
-          <button class="button-order-normal" type="button"></button>
+          <div class="catalog-goods-cost">
+            <b class="catalog-goods-price">340 ₽/кг</b>
+            <button class="button-order-normal" type="button"></button>
+          </div>
         </li>
         <li class="catalog-goods-item">
           <h4 class="catalog-goods-title">Шоколадка</h4>
           <img class="catalog-goods-img" src="img/catalog/item-chocolate-ice-cream.jpg" width="168" height="168" alt="Шарик шоколадного мороженого">
           <p class="catalog-goods-description">Классический шоколадный пломбир</p>
-          <b class="catalog-goods-price">270 ₽/кг</b>
-          <button class="button-order-normal" type="button"></button>
+          <div class="catalog-goods-cost">
+            <b class="catalog-goods-price">270 ₽/кг</b>
+            <button class="button-order-normal" type="button"></button>
+          </div>
         </li>
         <li class="catalog-goods-item">
           <h4 class="catalog-goods-title">Клубничка</h4>
           <img class="catalog-goods-img" src="img/catalog/item-strawberry-ice-cream.jpg" width="168" height="168" alt="Шарик клубничного мороженого">
           <p class="catalog-goods-description">Сливочный пломбир с клубничным вкусом</p>
-          <b class="catalog-goods-price">300 ₽/кг</b>
-          <button class="button-order-normal" type="button"></button>
+          <div class="catalog-goods-cost">
+            <b class="catalog-goods-price">300 ₽/кг</b>
+            <button class="button-order-normal" type="button"></button>
+          </div>
         </li>
         <li class="catalog-goods-item">
           <h4 class="catalog-goods-title">Лимон</h4>
           <img class="catalog-goods-img" src="img/catalog/item-lemon-ice-cream.jpg" width="168" height="168" alt="Шарик лимонного сорбета">
           <p class="catalog-goods-description">Освежающий лимонный сорбет</p>
-          <b class="catalog-goods-price">310 ₽/кг</b>
-          <button class="button-order-normal" type="button"></button>
+          <div class="catalog-goods-cost">
+            <b class="catalog-goods-price">310 ₽/кг</b>
+            <button class="button-order-normal" type="button"></button>
+          </div>
         </li>
         <li class="catalog-goods-item">
           <h4 class="catalog-goods-title">Ментол</h4>
           <img class="catalog-goods-img" src="img/catalog/item-menthol-ice-cream.jpg" width="168" height="168" alt="Шарик мороженого с вкусом ментола">
           <p class="catalog-goods-description">Сливочный пломбир с ментоловым сиропом</p>
-          <b class="catalog-goods-price">310 ₽/кг</b>
-          <button class="button-order-normal" type="button"></button>
+          <div class="catalog-goods-cost">
+            <b class="catalog-goods-price">310 ₽/кг</b>
+            <button class="button-order-normal" type="button"></button>
+          </div>
         </li>
         <li class="catalog-goods-item">
           <h4 class="catalog-goods-title">Орешек</h4>
           <img class="catalog-goods-img" src="img/catalog/item-pistachio-chocolate-syrup-ice-cream.jpg" width="168" height="168" alt="Шарик фисташкового мороженого с сиропом">
           <p class="catalog-goods-description">Фисташковый пломбир с шоколадным сиропом</p>
-          <b class="catalog-goods-price">360 ₽/кг</b>
-          <button class="button-order-normal" type="button"></button>
+          <div class="catalog-goods-cost">
+            <b class="catalog-goods-price">360 ₽/кг</b>
+            <button class="button-order-normal" type="button"></button>
+          </div>
         </li>
         <li class="catalog-goods-item">
           <h4 class="catalog-goods-title">Крем-брюле</h4>
           <img class="catalog-goods-img" src="img/catalog/item-creme-brulee-ice-cream.jpg" width="168" height="168" alt="Шарик мороженого Крем-брюле">
           <p class="catalog-goods-description">Классическое крем-брюле </p>
-          <b class="catalog-goods-price">280 ₽/кг</b>
-          <button class="button-order-normal" type="button"></button>
+          <div class="catalog-goods-cost">
+            <b class="catalog-goods-price">280 ₽/кг</b>
+            <button class="button-order-normal" type="button"></button>
+          </div>
         </li>
       </ul>
       </section>
@@ -305,12 +329,12 @@
         </li>
         <li class="footer-paperwork-item">
           <a class="footer-paperwork-link" href="#">
-            О производстве
+            Наши документы
           </a>
         </li>
         <li class="footer-paperwork-item">
           <a class="footer-paperwork-link" href="#">
-            Наши документы
+            О производстве
           </a>
         </li>
         <li class="footer-paperwork-item">
