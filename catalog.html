@@ -11,7 +11,7 @@
   <link rel="icon" type="image/ico" sizes="32x32" href="img/favicon-32.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
   <link rel="stylesheet" href="css/main-styles.css">
-  <title>FORK - Глэйси - магазин по продаже мороженого</title>
+  <title>Глэйси - магазин по продаже мороженого</title>
 </head>
 
 <body class="page-body">
@@ -88,63 +88,81 @@
 
       <section class="inner-filter-product">
         <form class="filter-product-form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="inner-filter-product-sorting">
-            <legend class="inner-filter-name">Сортировка:</legend>
-            <select name="filter-product-popular">
-              <option value="по популярности">по популярности</option>
-              <option value="по жирности">по жирности</option>
-              <option value="по возрастанию">по возрастанию</option>
-              <option value="по убыванию">по убыванию</option>
-            </select>
-          </fieldset>
-          <fieldset class="inner-filter-product-price">
-            <legend class="inner-filter-name">Цена: 100 ₽ – 500 ₽</legend>
-            <button class="filter-range-toggle toggle-min" type="button"></button>
-            <button class="filter-range-toggle toggle-max" type="button"></button>
-          </fieldset>
-          <fieldset class="inner-filter-product-fatness">
-            <legend class="inner-filter-name">Жирность:</legend>
-            <label>
-              <input type="radio" name="filter-fatness" value="0%">
-              0%
-            </label>
-            <label>
-              <input type="radio" name="filter-fatness" value="до 10%">
-              до 10%
-            </label>
-            <label>
-              <input type="radio" name="filter-fatness" value="до 30%">
-              до 30%
-            </label>
-            <label>
-              <input type="radio" name="filter-fatness" value="выше 30%">
-              выше 30%
-            </label>
-          </fieldset>
-          <fieldset class="inner-filter-product-filling">
-            <legend class="inner-filter-name">Наполнители:</legend>
-            <label>
-              <input type="checkbox" name="filter-filling" value="шоколадные" checked>
-              шоколадные
-            </label>
-            <label>
-              <input type="checkbox" name="filter-filling" value="сахарные присыпки" checked>
-              сахарные присыпки
-            </label>
-            <label>
-              <input type="checkbox" name="filter-filling" value="фрукты">
-              фрукты
-            </label>
-            <label>
-              <input type="checkbox" name="filter-filling" value="сиропы">
-              сиропы
-            </label>
-            <label>
-              <input type="checkbox" name="filter-filling" value="джемы">
-              джемы
-            </label>
-          </fieldset>
-          <button class="filter-product-button" type="submit">Применить</button>
+          <div class="filter-row-wrapper">
+            <fieldset class="inner-filter-product-sorting">
+              <legend class="inner-filter-name">Сортировка:</legend>
+              <select  class="filter-product-popular" name="filter-product-popular">
+                <option value="по популярности">по популярности</option>
+                <option value="по жирности">по жирности</option>
+                <option value="по возрастанию">по возрастанию</option>
+                <option value="по убыванию">по убыванию</option>
+              </select>
+            </fieldset>
+            <fieldset class="inner-filter-product-price">
+              <legend class="inner-filter-name">Цена:
+                <label class="inner-filter-label">
+                  <input class="filter-product-price-field" type="number" name="min-price" value="0"> ₽
+                </label>
+                <span class="filter-price-dash">–</span>
+                <label class="inner-filter-label">
+                  <input class="filter-product-price-field" type="number" name="max-price" value="500"> ₽
+				</label>
+			  </legend>
+              <div class="inner-filter-box filter-slider-price">
+                <button class="filter-range-toggle toggle-min" type="button"></button>
+                <button class="filter-range-toggle toggle-max" type="button"></button>
+            </div>
+            </fieldset>
+            <fieldset class="inner-filter-product-fatness">
+              <legend class="inner-filter-name">Жирность:</legend>
+              <div class="inner-filter-box">
+                <label class="inner-filter-label">
+                  <input type="radio" name="filter-fatness" value="0%">
+                  0%
+                </label>
+                <label class="inner-filter-label">
+                  <input type="radio" name="filter-fatness" value="до 10%">
+                  до 10%
+                </label>
+                <label class="inner-filter-label">
+                  <input type="radio" name="filter-fatness" value="до 30%">
+                  до 30%
+                </label>
+                <label class="inner-filter-label">
+                  <input type="radio" name="filter-fatness" value="выше 30%">
+                  выше 30%
+                </label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="filter-row-wrapper">
+            <fieldset class="inner-filter-product-filling">
+              <legend class="inner-filter-name">Наполнители:</legend>
+              <div class="inner-filter-box">
+                <label class="inner-filter-label">
+                  <input type="checkbox" name="filter-filling" value="шоколадные" checked>
+                  шоколадные
+                </label>
+                <label class="inner-filter-label">
+                  <input type="checkbox" name="filter-filling" value="сахарные присыпки" checked>
+                  сахарные присыпки
+                </label>
+                <label  class="inner-filter-label">
+                  <input type="checkbox" name="filter-filling" value="фрукты">
+                  фрукты
+                </label>
+                <label class="inner-filter-label">
+                  <input type="checkbox" name="filter-filling" value="сиропы">
+                  сиропы
+                </label>
+                <label class="inner-filter-label">
+                  <input type="checkbox" name="filter-filling" value="джемы">
+                  джемы
+                </label>
+              </div>
+            </fieldset>
+            <button class="filter-product-button" type="submit">Применить</button>
+          </div>
         </form>
       </section>
       <section class="inner-catalog-goods">
