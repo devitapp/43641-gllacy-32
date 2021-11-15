@@ -212,7 +212,7 @@
 
 .pagination-show-more {
   min-height: 54px;
-  margin-left: 495px;
+  margin-left: auto;
   font-weight: 700;
   outline: 4px solid rgba(252, 252, 252, 0.4);
 }
@@ -251,21 +251,23 @@
 /* END Slider*/
 
 .socialmedia-list {
+  max-width: 116px;
   margin: 0;
   padding: 0;
-  display: grid;
-  max-width: 116px;
-  grid-template-columns: repeat(5,26px);
-  gap: 16px 10px;
+  display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
 }
 
-.socialmedia-item {
+.socialmedia-item,
+.footer-socialmedia-item {
   margin-right: 16px;
+  margin-bottom: 10px;
   list-style-type: none;
 }
 
-.socialmedia-item:last-child{
+.socialmedia-item:nth-child(3n),
+.footer-socialmedia-item:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -850,7 +852,7 @@
 }
 
 .catalog-goods {
-margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 .catalog-goods-list {
@@ -975,18 +977,17 @@ margin-bottom: 80px;
 }
 
 .footer-socialmedia {
-  margin-right: 325px;
+  margin-right: auto;
 }
 
 .footer-socialmedia-list {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   max-width: 116px;
   margin: 0;
   margin-left: 4px;
   padding: 0;
   list-style-type: none;
-  grid-template-columns: repeat(5,26px);
-  gap: 16px 10px;
 }
 
 .socialmedia-link,
