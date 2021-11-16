@@ -157,7 +157,6 @@
   height: 32px;
   background-color: #FF2F64;
   background-image: url('data:image/svg+xml,%3Csvg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M1.1667.25a.6667.6667 0 1 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8255 1.8255 0 0 0 1.8183 1.4691h5.6207a1.8258 1.8258 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107L4.1381.7858A.6667.6667 0 0 0 3.4844.25H1.1667ZM5.691 8.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z" fill="%23FCFCFC"/%3E%3C/svg%3E');
-   /* !^Experimental^ */
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
@@ -168,7 +167,6 @@
   background-color: rgba(252, 252, 252, 0.3);
   border: 2px solid #FF2F64;
   background-image: url('data:image/svg+xml,%3Csvg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M1.1667.25a.6667.6667 0 1 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8255 1.8255 0 0 0 1.8183 1.4691h5.6207a1.8258 1.8258 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107L4.1381.7858A.6667.6667 0 0 0 3.4844.25H1.1667ZM5.691 8.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z" fill="%232D3440"/%3E%3C/svg%3E');
-  /* !^Experimental^ */
 }
 
 .button-order-normal:focus-visible {
@@ -230,7 +228,6 @@
 .pagination-show-more:active{
   background-color:#FFCBD8;
 }
-
 /* END Buttons Style Guide */
 
 /* Временное обозначение слайдера */
@@ -238,16 +235,9 @@
   width: 1170px;
   height: 554px;
   margin-bottom: 80px;
-  outline: 2px dashed #FFCBD8;
   background-color: #FFCBD8;
 }
 
-.slider::before {
-  content: "Slider";
-  padding-left: 10px;
-  font-size: 21px;
-  color: #2c3e50;
-}
 /* END Slider*/
 
 .socialmedia-list {
@@ -394,12 +384,16 @@
 }
 
 .navigation-user {
-  width: 255px;
+  max-width: 235px;
   font-size: 14px;
 }
 
 .navigation-user .site-navigation-item { 
   margin-right: 16px;
+}
+
+.navigation-user .site-navigation-item:last-child {
+  margin-right: 0;
 }
 
 .site-navigation-search-button {
@@ -520,9 +514,16 @@
 
 .infoblock-shop {
   margin-bottom: 80px;
-  padding: 56px 40px;
   border-radius: 16px;
+  padding: 24px;
   background-color: #FCFCFC;
+  background-image: url("../img/waffle-bg.jpg");
+}
+
+.infoblock-shop-wrapper {
+  padding: 56px 40px;
+  background-color: #FCFCFC;
+  border-radius: 16px;
 }
 
 .infoblock-shop-subject {
@@ -539,26 +540,60 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  /* ^Для визуальной красоты блока^ */
+  justify-content: flex-start;
   list-style-type: none;
 }
 
 .infoblock-shop-item {
   width: 442px;
-  padding-right: 95px;
-  padding-bottom: 40px;
+  margin-left: 64px;
+  margin-bottom: 40px;
+  padding-right: 30px;
   font-size: 16px;
   line-height: 22px;
+  position: relative;
 }
 
 .infoblock-shop-item:last-child,
 .infoblock-shop-item:nth-last-child(2) {
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .infoblock-shop-item:nth-child(even) {
   padding-right: 0;
+}
+
+.infoblock-shop-description {
+  margin: 0;
+  padding: 0;
+}
+
+.infoblock-shop-item .infoblock-making-factory::before{
+  content: url("../icons/icon-ice-cream.svg");
+  position: absolute;
+  top: 0;
+  left: -64px;
+}
+
+.infoblock-shop-item .infoblock-making-quality::before{
+  content: url("../icons/icon-leaf.svg");
+  position: absolute;
+  top: 0;
+  left: -64px;
+}
+
+.infoblock-shop-item .infoblock-making-milk::before{
+  content: url("../icons/icon-cow.svg");
+  position: absolute;
+  top: 0;
+  left: -64px;
+}
+
+.infoblock-shop-item .infoblock-making-shipping::before{
+  content: url("../icons/icon-degrees.svg");
+  position: absolute;
+  top: 0;
+  left: -64px;
 }
 
 .blog-publication {
@@ -603,11 +638,21 @@
 }
 
 .blog-publication-subscribe {
-  width: 570px;
-  padding: 26px;
+  width: 558px;
+  padding: 24px;
   background-color: #FCFCFC;
   border-radius: 16px;
   box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.blog-publication-subscribe-wrapper {
+  border-radius: 16px;
+  background-image: url("../img/blog-subscribe-bg.png");
+  background-repeat: no-repeat;
+  padding: 6px;
 }
 
 .blog-publication-description {
@@ -618,7 +663,7 @@
 }
 
 .blog-publication-field {
-  width: 325px;
+  width: 315px;
   margin-right: 20px;
 }
 
@@ -1062,4 +1107,7 @@
   background-color: #2D3440;
 }
 
-
+.socialmedia-link:active,
+.footer-socialmedia-link:active {
+  outline: 2px solid #2D3440;
+}
