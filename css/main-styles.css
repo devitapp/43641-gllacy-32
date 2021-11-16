@@ -568,32 +568,26 @@
   padding: 0;
 }
 
-.infoblock-shop-item .infoblock-making-factory::before{
-  content: url("../icons/icon-ice-cream.svg");
+.infoblock-shop-description::before{
   position: absolute;
   top: 0;
   left: -64px;
+}
+
+.infoblock-shop-item .infoblock-making-factory::before{
+  content: url("../icons/icon-ice-cream.svg");
 }
 
 .infoblock-shop-item .infoblock-making-quality::before{
   content: url("../icons/icon-leaf.svg");
-  position: absolute;
-  top: 0;
-  left: -64px;
 }
 
 .infoblock-shop-item .infoblock-making-milk::before{
   content: url("../icons/icon-cow.svg");
-  position: absolute;
-  top: 0;
-  left: -64px;
 }
 
 .infoblock-shop-item .infoblock-making-shipping::before{
   content: url("../icons/icon-degrees.svg");
-  position: absolute;
-  top: 0;
-  left: -64px;
 }
 
 .blog-publication {
