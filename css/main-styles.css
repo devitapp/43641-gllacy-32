@@ -399,7 +399,7 @@ input[type="date"]:disabled {
   width: 16px;
   height: 2px;
   border-radius: 20px;
-  background-color: black;
+  background-color: #000000;
   top: 5px;
   left: 2px;
 }
@@ -528,7 +528,7 @@ input[type="date"]:disabled {
   width: 16px;
   height: 2px;
   border-radius: 20px;
-  background-color: black;
+  background-color: #000000;
   top: 12px;
   right: 4px;
 }
@@ -1137,7 +1137,7 @@ input[type="date"]:disabled {
   width: 570px;
   padding: 32px;
   background-color: #FCFCFC;
-  background-image: url(../img/fruit-sherbet.jpg);
+  background-image: url("../img/fruit-sherbet.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   border-radius: 16px;
@@ -1202,7 +1202,7 @@ input[type="date"]:disabled {
   margin-bottom: 80px;
   padding-left: 100px;
   background-color: #FCFCFC;
-  background-image: url(../img/delivery-ice-cream.jpg);
+  background-image: url("../img/delivery-ice-cream.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   border-radius: 16px;
@@ -1304,7 +1304,7 @@ input[type="date"]:disabled {
   width: 1170px;
   padding: 64px;
   background-color: #FCFCFC;
-  background-image: url(../img/ice-cream-cone.jpg);
+  background-image: url("../img/ice-cream-cone.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   border-radius: 16px;
@@ -1723,8 +1723,8 @@ input[type="date"]:disabled {
   appearance: textfield;
 }
 
-.range-input::-webkit-outer-spin-button,
-.range-input::-webkit-inner-spin-button {
+.range-price-input::-webkit-outer-spin-button,
+.range-price-input::-webkit-inner-spin-button {
   margin: 0;
   appearance: none;
 }
