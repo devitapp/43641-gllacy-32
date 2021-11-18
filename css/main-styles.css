@@ -939,7 +939,7 @@ input[type="date"]:disabled {
   width: 32px;
   height: 32px;
   background-color: rgba(252, 252, 252, 0.4);
-  background-image: url("../icons/icon-search.svg");
+  background-image: url("../img/icons/icon-search.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: none;
@@ -959,14 +959,14 @@ input[type="date"]:disabled {
 }
 
 .site-navigation-link-login {
-  background-image: url("../icons/icon-login.svg");
+  background-image: url("../img/icons/icon-login.svg");
   background-repeat: no-repeat;
   background-position: left 10px center;
   padding-left: 32px;
 }
 
 .site-navigation-link-basket {
-  background-image: url("../icons/icon-cart.svg");
+  background-image: url("../img/icons/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: left 10px center;
   padding-left: 32px;
@@ -1111,19 +1111,19 @@ input[type="date"]:disabled {
 }
 
 .infoblock-shop-item .infoblock-making-factory::before{
-  content: url("../icons/icon-ice-cream.svg");
+  content: url("../img/icons/icon-ice-cream.svg");
 }
 
 .infoblock-shop-item .infoblock-making-quality::before{
-  content: url("../icons/icon-cow.svg");
+  content: url("../img/icons/icon-cow.svg");
 }
 
 .infoblock-shop-item .infoblock-making-milk::before{
-  content: url("../icons/icon-leaf.svg");
+  content: url("../img/icons/icon-leaf.svg");
 }
 
 .infoblock-shop-item .infoblock-making-shipping::before{
-  content: url("../icons/icon-degrees.svg");
+  content: url("../img/icons/icon-degrees.svg");
 }
 
 .blog-publication {
@@ -1295,7 +1295,7 @@ input[type="date"]:disabled {
   padding: 0;
   background-color: transparent;
   border: none;
-  background-image: url("../icons/icon-info.svg");
+  background-image: url("../img/icons/icon-info.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1372,7 +1372,7 @@ input[type="date"]:disabled {
 .footer-paperwork-item:nth-child(1)::before {
   content: "";
   display: block;
-  background-image: url("../icons/icon-heart.svg");
+  background-image: url("../img/icons/icon-heart.svg");
   background-repeat: no-repeat;
   top: 4px;
   left: -23px;
@@ -1411,7 +1411,7 @@ input[type="date"]:disabled {
 
 .breadcrumbs-item:not(:last-of-type)::after {
   content: "";
-  background-image: url("../icons/icon-double-arrow.svg");
+  background-image: url("../img/icons/icon-double-arrow.svg");
   background-repeat: no-repeat;
   display: block;
   position: absolute;
