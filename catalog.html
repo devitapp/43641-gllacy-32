@@ -11,7 +11,7 @@
   <link rel="icon" type="image/ico" sizes="32x32" href="img/favicon-32.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
   <link rel="stylesheet" href="css/main-styles.css">
-  <title>Глэйси - магазин по продаже мороженого</title>
+  <title>PixelPerfect - Глэйси - магазин по продаже мороженого</title>
 </head>
 
 <body class="page-body">
@@ -418,6 +418,29 @@
       <p class="footer-copyright-text">Сделано в <a class="footer-copyright-link" href="http://htmlacademy.ru">.html academy</a> © 2021</p>
     </section>
   </footer>
+
+  <div class="modal-container">
+    <div class="modal-content">
+      <button class="modal-feedback-button-close">
+      </button>
+        <h2 class="modal-feedback-subject">Мы обязательно ответим вам!</h2>
+        <form class="modal-feedback-form" action="https://echo.htmlacademy.ru/" method="POST">
+          <p class="modal-feedback-field-group">
+            <label class="visually-hidden">Имя и фамилия</label>
+            <input class="modal-feedback-input form-input-plant" type="text" name="feedback-name" placeholder="Имя и фамилия" required>
+          </p>
+          <p class="modal-feedback-field-group">
+            <label class="visually-hidden">Адрес электронной почты</label>
+            <input class="modal-feedback-input form-input-plant" type="email" name="feedback-email" placeholder="email@example.com" required>
+          </p>
+          <p class="modal-feedback-field-group">
+            <label class="visually-hidden">Введите текст в свободной форме</label>
+            <textarea class="modal-feedback-textarea form-input-plant" name="feedback-message" rows="8" placeholder="В свободной форме" required></textarea>
+          </p>
+          <button class="button-blank button-normal-accent" type="submit">Отправить</button>
+        </form>
+    </div>
+  </div>
 
 </body>
 

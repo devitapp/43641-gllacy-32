@@ -51,8 +51,12 @@
   margin-bottom: 24px;
 }
 
+.page-main-inner {
+  margin-bottom: 10px;
+}
+
 .page-footer {
-  padding: 48px 0;
+  padding: 16px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -586,17 +590,18 @@ input[type="date"]:disabled {
 /* END Modals & Popup */
 
 .slider-goods {
-  margin-bottom: 80px;
+  margin-bottom: 72px;
 }
 
 .slider-goods-wrapper {
   display: flex;
+  min-height: 520px;
 }
 
 .slider-goods-column-text {
   width: 470px;
   padding-left: 70px;
-  padding-top: 136px;
+  padding-top: 120px;
 }
 
 .slider-goods-subject{
@@ -781,7 +786,6 @@ input[type="date"]:disabled {
 .socialmedia-item,
 .footer-socialmedia-item {
   margin-right: 16px;
-  margin-bottom: 10px;
   list-style-type: none;
 }
 
@@ -795,7 +799,7 @@ input[type="date"]:disabled {
 }
 
 .header-logo-link {
-  margin-right: 32px;
+  margin-right: 18px;
 }
 
 .site-navigation {
@@ -904,20 +908,25 @@ input[type="date"]:disabled {
 
 .site-navigation-link-phone {
   font-weight: 700; 
+  font-size: 16px;
+  line-height: 20px;
   text-decoration: none;
   color: #2c3e50;
-  align-self: center;
 }
 
 .navigation-user {
   margin-left: auto;
-  min-width: 420px;
+  min-width: 440px;
   font-size: 14px;
   justify-content: flex-end;
 }
 
 .navigation-user .site-navigation-item { 
   margin-right: 16px;
+}
+
+.navigation-user .site-navigation-item:first-of-type { 
+  margin-right: 36px;
 }
 
 .navigation-user .site-navigation-item:last-child {
@@ -974,7 +983,7 @@ input[type="date"]:disabled {
 }
 
 .shopping-gift-subject {
-  width: 445px;
+  width: 443px;
 }
 
 .catalog-goods-subject{
@@ -1032,7 +1041,7 @@ input[type="date"]:disabled {
 .shop-marshmallow-gift{
   background-image: url("../img/marshmallow-waffle-cone.png");
   background-repeat: no-repeat;
-  background-position: right 25px;
+  background-position: right 7px top 19px;
 }
 
 .shop-marshmallow-gift .shopping-gift-description {
@@ -1055,7 +1064,7 @@ input[type="date"]:disabled {
 
 .infoblock-shop-subject {
   margin: 0;
-  padding-bottom: 56px;
+  padding-bottom: 55px;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
@@ -1106,11 +1115,11 @@ input[type="date"]:disabled {
 }
 
 .infoblock-shop-item .infoblock-making-quality::before{
-  content: url("../icons/icon-leaf.svg");
+  content: url("../icons/icon-cow.svg");
 }
 
 .infoblock-shop-item .infoblock-making-milk::before{
-  content: url("../icons/icon-cow.svg");
+  content: url("../icons/icon-leaf.svg");
 }
 
 .infoblock-shop-item .infoblock-making-shipping::before{
@@ -1118,7 +1127,7 @@ input[type="date"]:disabled {
 }
 
 .blog-publication {
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   display: grid;
   grid-template-columns: repeat(2, 570px);
   gap: 30px;
@@ -1184,7 +1193,7 @@ input[type="date"]:disabled {
 }
 
 .blog-publication-field {
-  width: 315px;
+  width: 335px;
   margin-right: 20px;
 }
 
@@ -1264,7 +1273,7 @@ input[type="date"]:disabled {
   width: 380px;
   margin: 0;
   padding: 0;
-  padding-bottom: 16px;
+  padding-bottom: 30px;
 }
 
 .home-delivery-form-address {
@@ -1333,7 +1342,7 @@ input[type="date"]:disabled {
 
 .contact-shop-block-officetime {
   display: block;
-  padding-bottom: 24px;
+  padding-bottom: 30px;
   font-size: 14px;
 }
 
@@ -1372,6 +1381,10 @@ input[type="date"]:disabled {
   height: 16px;
 }
 
+.footer-copyright {
+  padding-right: 16px;
+}
+
 .footer-copyright-text,
 .footer-copyright-link {
   font-size: 12px;
@@ -1379,13 +1392,13 @@ input[type="date"]:disabled {
   color: #2D3440;
 }
 
-
 /* Page Catalog */
 
 .breadcrumbs-list {
   margin: 0;
   margin-bottom: 16px;
   padding: 0;
+  padding-top: 16px;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
@@ -1433,8 +1446,12 @@ input[type="date"]:disabled {
   line-height: 46px;
 }
 
+.inner-header {
+  margin-bottom: 40px;
+}
+
 .inner-filter-product {
-  margin-bottom: 98px;
+  margin-bottom: 76px;
 }
 
 .filter-product-form {
@@ -1772,10 +1789,12 @@ input[type="date"]:disabled {
 
 .catalog-goods-price {
   max-width: 153px;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .inner-pagination {
-  padding: 40px 0;
+  padding: 56px 0;
   padding-bottom: 80px;
   display: flex;
   border-bottom: 1px solid rgba(252, 252, 252, 0.3);
