@@ -1508,7 +1508,7 @@ input[type="date"]:disabled {
   border: none;
   font-size: 14px;
   line-height: 20px;
-  background-image: url("../icons/icon-caron-down.svg");
+  background-image: url("../img/icons/icon-caron-down.svg");
   background-repeat: no-repeat;
   background-position: right 15px center;
   appearance: none;
@@ -1547,18 +1547,18 @@ input[type="date"]:disabled {
 }
 
 .control-input[type="checkbox"]:checked + .control-mark {
-  background-image: url("./icons/checkbox-checked-hover.svg");
+  background-image: url("../img/icons/checkbox-checked-hover.svg");
   border: none;
 }
 
 
 .control-input[type="checkbox"]:checked:hover + .control-mark {
-  background-image: url("../icons/checkbox-checked-hover.svg");
+  background-image: url("../img/icons/checkbox-checked-hover.svg");
   border: none;
 }
 
 .control:hover .control-mark {
-  background-image: url("../icons/checkbox-checked-hover.svg");
+  background-image: url("../img/icons/checkbox-checked-hover.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: 1px solid #FCFCFC;
@@ -1573,28 +1573,28 @@ input[type="date"]:disabled {
 }
 
 .control-input[type="checkbox"]:checked + .control-mark {
-  background-image: url("../icons/checkbox-checked.svg");
+  background-image: url("../img/icons/checkbox-checked.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: none;
 }
 
 .control-input[type="checkbox"]:checked:hover + .control-mark {
-  background-image: url("../icons/checkbox-checked-hover.svg");
+  background-image: url("../img/icons/checkbox-checked-hover.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: none;
 }
 
 .control-input[type="checkbox"]:checked:focus-visible + .control-mark {
-  background-image: url("../icons/checkbox-checked-hover.svg");
+  background-image: url("../img/icons/checkbox-checked-hover.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: none;
 } 
 
 .control-input[type="checkbox"]:checked:disabled + .control-mark {
-  background-image: url("../icons/checkbox-checked.svg");
+  background-image: url("../img/icons/checkbox-checked.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: none;
